@@ -102,12 +102,29 @@ class Login extends Component {
         });
     };
 
+    showInstr=()=>{
+        if(document.getElementById("helpDesc").hidden)
+        {document.getElementById("helpDesc").hidden=false;}
+        else{document.getElementById("helpDesc").hidden=true;}
+    };
+
     render() {
     return (
     <div>   
     <div className="bodyback">
         <div className="logo" >
             <img className="logoimgLogin" src="/assets/logo.png"/>
+        </div>
+        <div className="col-xs-8 col-xs-offset-4 col-md-2 col-md-offset-10"><button className="helpButton" onClick={this.showInstr}>Get Started</button></div>
+        <div className="col-xs-8 col-xs-offset-4 col-md-7 col-md-offset-5" >
+            <p id="helpDesc" className="helpButton" hidden="hidden">
+                'Rewardery' is designed to motivate children to do their chores.
+                <br/>Step 1: Parents should log in to their account. Sign up, if you haven't already.
+                <br/>Step 2: Add your kids details into the list.
+                <br/>Step 3: Set up individual chores by going to their individual pages.
+                <br/>Step 4: Set up your rewards.
+                <br/>Step 5: Sit back relax and REWARD!
+            </p>
         </div>
         <div className="back">
             <div className="container" id="validation">

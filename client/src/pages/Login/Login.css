@@ -47,7 +47,29 @@ html{
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
+    .helpButton{
+        border:none;
+        background-color: transparent;
+        color: #fedc00;
+        font-size: 20px;
+        font-weight: bold;
+        margin:20px auto 20px 20px;
+    }
+    #helpDesc{
+        position: absolute;
+        z-index: 99 !important;
+        border:none;
+        background-color: grey;
+        border-radius: 30px;
+        border-width: 9px;
+        border-style: double;
+        border-color: white;
+        color: #fedc00;
+        font-size: 20px;
+        font-weight: bold;
+        margin: -20px auto 0px -100px;
+        padding: 2%;
+    }
 
 @media only screen and (max-width: 1170px) {
    
@@ -60,6 +82,27 @@ html{
         float: left;
         width:50%;
     }
+    .helpButton{
+        border:none;
+        background-color: transparent;
+        color: #fedc00;
+        font-size: 20px;
+        font-weight: bold;
+        margin:20px auto 20px 20px;
+    }
+    #helpDesc{
+        border:none;
+        background-color: grey;
+        border-radius: 30px;
+        border-width: 9px;
+        border-style: double;
+        border-color: white;
+        color: #fedc00;
+        font-size: 20px;
+        font-weight: bold;
+        margin: -20px auto 0px -100px;
+        padding: 2%;
+    }
     
 }
 
@@ -71,5 +114,31 @@ html{
     .signup-panel{
         float: left;
         width:100%;
+    }
+    .logoimgLogin {
+        background-color: transparent;
+        height: 100%;
+        margin-top: 8%;
+    }
+    .helpButton{
+        border:none;
+        background-color: transparent;
+        color: #fedc00;
+        font-size: 14px;
+        font-weight: bold;
+        margin:0px auto 0px 122px;
+    }
+    #helpDesc{
+        border:none;
+        background-color: grey;
+        border-radius: 30px;
+        border-width: 9px;
+        border-style: double;
+        border-color: white;
+        color: #fedc00;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 6px auto 0px -100px;
+        padding: 2%;
     }
 }
