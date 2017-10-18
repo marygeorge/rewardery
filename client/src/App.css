@@ -87,6 +87,13 @@ li .text-add-kid-btn{
   color:#403f45;
   font-size: 1.2em;
 }
+.errorMsg{
+  border:none;
+  background-color: transparent;
+  color: orange;
+  font-size: 30px;
+  margin:0px auto 20px 20px;
+}
 
 @media only screen and (max-width: 1170px) {
 

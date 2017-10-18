@@ -14,7 +14,12 @@ class Login extends Component {
           switch(event.target.id){
               case "parentFirstName": this.setState({supFirstName:event.target.value});break;
               case "parentLastName":this.setState({supLastName:event.target.value});break;
-              case "parentEmail":this.setState({supEmail:event.target.value});break;
+              case "parentEmail":
+              {    
+                  this.setState({supEmail:event.target.value});
+                  break;
+                  
+              };
               case "parentUserName":this.setState({supUsername:event.target.value});break;
               case "parentPassword":this.setState({supPassword:event.target.value});break;
           }
@@ -30,38 +35,71 @@ class Login extends Component {
     };
 
       handleSignup=()=>{
-          var data={
-              firstname:this.state.supFirstName,
-              lastname:this.state.supLastName,
-              email:this.state.supEmail,
-              username:this.state.supUsername,
-              password:this.state.supPassword,           
-          };
-        API.signUp(data)
-        .then(res => console.log("done"))
-        .catch(err => console.log(err));
-    };
+        API.validEmail(this.state.supEmail).then(res=>{
+            console.log("validEmail: " +res.data);
+            if(res.data)
+            {
+                console.log("Email already in use");
+                document.getElementById("signupError").value=("Email already in use");
+                document.getElementById("signupError").hidden=false;
+            }
+            else
+            {
+                console.log("Email NOT in use");
+                document.getElementById("signupError").value=("");
+                document.getElementById("signupError").hidden=true;
+                var data={
+                    firstname:this.state.supFirstName,
+                    lastname:this.state.supLastName,
+                    email:this.state.supEmail,
+                    username:"",
+                    password:this.state.supPassword,           
+                };
+                API.signUp(data).then(res =>{ 
+                    console.log(res.data);
+                    sessionStorage.setItem("parentid", res.data.id);
+                    console.log(sessionStorage.getItem("parentid"));
+                    window.location='./parent/';
+                })
+                .catch(err => {
+                    console.log(err)
+                });
+                
+            }
+        });
+      };  
 
     handleLogin=()=>{
         API.login(this.state.sinUsername,this.state.sinPassword,this.state.loginType)
         .then(res => {
-            if(this.state.loginType==="parent") 
+            if(res.data==="invalid")
             {
-            console.log(res.data);
-            sessionStorage.setItem("parentid", res.data.id);
-            console.log(sessionStorage.getItem("parentid"));
-            window.location='./parent/';
+                document.getElementById("loginError").hidden=false;
             }
-        if(this.state.loginType==="child")
-            {
-            console.log(res.data);
-            sessionStorage.setItem("childid",res.data.id);
-            console.log(sessionStorage.getItem("childid"));
-            window.location='./child/';
-            }
+            else{
+                document.getElementById("loginError").hidden=true;
+                if(this.state.loginType==="parent") 
+                    {
+                    console.log(res.data);
+                    sessionStorage.setItem("parentid", res.data.id);
+                    console.log(sessionStorage.getItem("parentid"));
+                    window.location='./parent/';
+                    }
+                if(this.state.loginType==="child")
+                    {
+                    console.log(res.data);
+                    sessionStorage.setItem("childid",res.data.id);
+                    console.log(sessionStorage.getItem("childid"));
+                    window.location='./child/';
+                }
+            };
         
         })
-        .catch(err => console.log(err));
+        .catch(err =>{
+            
+            console.log(err)
+
+        });
     };
 
     render() {
@@ -75,9 +113,11 @@ class Login extends Component {
             <div className="container" id="validation">
                 <div className="col-md-4 col-md-offset-1">
                     <Signin handleChange={this.handleSigninChange} handleSubmit={this.handleLogin} />
+                    <input className="errorMsg" id="loginError" type="text" value="Invalid login" hidden="hidden"  />
                 </div>  
                 <div className="col-md-4 col-md-offset-3">
                     <Signup  handleChange={this.handleSignupChange} handleSubmit={this.handleSignup} />
+                    <input className="errorMsg" id="signupError" type="text" value="" hidden="hidden"  />
                 </div>
             </div>
         </div>

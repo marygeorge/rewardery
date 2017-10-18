@@ -11,6 +11,7 @@ module.exports = function (sequelize, DataTypes) {
         ParentEmail: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique:true,
         },
         ParentUsername: {
             type: DataTypes.STRING,

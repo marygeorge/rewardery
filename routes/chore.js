@@ -3,19 +3,34 @@ const path = require("path");
 var appDir = path.dirname(require.main.filename);
 const db = require("../models");
 
+router.route("/api/isValidEmail/:email").get((req,res)=>{
+  db.Parent.find({
+            where:{
+                ParentEmail:req.params.email,
+            }
+        }).then(function(result) {
+          console.log(result);
+          if(result) 
+           {  res.send("1");  }
+           else
+           { res.send("0"); }
+        });
+});
 
-router.route("/api/login/:username/:password/:type").get((req,res)=>{ 
+router.route("/api/login/:email/:password/:type").get((req,res)=>{ 
   console.log("\n username :"+req.params.username+"\n password :"+req.params.password+"\n type :"+req.params.type)
   if(req.params.type==="parent")
   {
    db.Parent.findOne({
             where:{
-                ParentUsername:req.params.username,
+                ParentEmail:req.params.email,
                 ParentPassword: req.params.password
             }
         }).then(function(result) {
-            //console.log(result.dataValues);
-            res.json(result.dataValues);
+           if(result) 
+           {  res.json(result.dataValues);  }
+           else
+           { res.send("invalid"); }
         });
   }
   if(req.params.type==="child")
@@ -26,8 +41,10 @@ router.route("/api/login/:username/:password/:type").get((req,res)=>{
                 ChildPassword: req.params.password
             }
         }).then(function(result) {
-            //console.log(result.dataValues);
-            res.json(result.dataValues);
+            if(result) 
+           {  res.json(result.dataValues);  }
+           else
+           { res.send("invalid"); }
         });
   }
   
