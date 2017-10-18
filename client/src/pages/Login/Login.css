@@ -1,6 +1,6 @@
 html{
   font-family: Helvetica, sans-serif;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .bodyback{
@@ -16,6 +16,7 @@ html{
     -o-background-size: cover;
     background-size: cover;
     background-color:transparent;
+    overflow: scroll;
 }
 .back{
     position: absolute;
