@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Chore | Add Chores</title>
+  <link rel="icon" href="assets/icon.png" sizes="16x16" type="image/png">
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-lg-12">
+      <nav>
+            <div class="blackBar">
+              <img class="logo" src = "assets/logo.png" alt= "logo">
+              <h2 class="parentNav">Parent<a href="index.html"><b class="logOut">(log out)</b></a></h2>
+              <div class="row">
+                    <div class="col-md-9">
+                    </div>
+<!-- Dropdown for changing/adding kids -->
+<div class="col-md-6 col-md-push-10">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle dropDownBox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <b class="kids">Kids</b>
+            <span class="caret" style="border-width:12px; margin-top:-10px;"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Name Here</a></li>
+            <li><a href="#">Name Here</a></li>
+            <li><a href="#">Name Here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Add Kid</a></li>
+            </ul>
+        </div>
+          </div>
+                  </div>
+            </div>
+            <div class="blueBar">
+            </div>
+     </nav> 
+    </div>
+    </div>
+
+    <div class="row">
+            <div class="col-lg-6" class="fixMargin">
+                <div class="calendarParent">
+<!-- Current day-->
+                    <div>
+                        <h3 class="theDay">Today</h3>
+                    </div>
+<!-- The phisical date -->
+                    <div>
+                        <h3 class="theDate">October 1st</h3>
+                    </div>
+
+<!-- The clickable images to scroll through calendar   -->
+
+                    <img class="cArrowL" src = "assets/cArrowL.png" alt="arrow left">
+
+                    <div id="choresDone">
+
+                        <h3 class="choresDone">2/3<h3>
+
+                    </div>
+
+                    <img class="calendarC" src = "assets/calendarC.png" alt="calendar circle">
+                    
+                    <img class="cArrowR" src = "assets/cArrowR.png" alt="arrow right">
+
+                </div>
+
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-md-6 col-md-push-6">
+                        <h3 class="addChoresTitle">Add Chores <b class="choresName">Name Here</b></h3>
+                            <form class="moveFormUp">
+                                <input class="choreName" id="choreName" type="name" placeholder="Chore Name"><br>
+                                <input class="selectPointAmount" id="selectPointAmount" type="name" placeholder="Select Point Amount"><br>
+                                <input class="dueDate" id="dueDate" type="email" placeholder="Due Date"><br>
+                                <input class="timeBox" id="timeBox" type="username" placeholder="Time">
+                                <input class="schedule" id="schedule" type="password" placeholder="Schedule"><br>
+                                    
+                                <input type="submit" class="submitChores" id="submitChores" value="Submit">
+                            </form>
+            </div>
+    </div>    
+    
+    <div class="row">
+            <div class="col-lg-12">
+                
+                <div class="choreBar">
+                        <h3 class="choreItems">
+                                Walk your little sister to the bus stop<br><br><br>
+                                Do the dishes<br><br><br>
+                                Take out the trash
+                        </h3>
+                        <img class="redCheckChoreP" src = "assets/redCheck.png" alt="red check">
+                        <img class="yellowCheckChoreP" src = "assets/yellowCheck.png" alt="yellow check">
+                        <img class="greenCheckChoreP" src = "assets/greenCheck.png" alt="green check">
+                        <div class="col-md-6 col-md-push-10">
+                                <h5 class="backMainParent">Back To Main</h5>
+                                <a href="parentMain.html"><img class="backMainBtn" src = "assets/backMainBtn.png" alt="back to main button"></a>
+                        </div>
+                </div>
+        
+        </div>
+        </div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+

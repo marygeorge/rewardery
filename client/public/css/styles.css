@@ -1,0 +1,3067 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+@font-face {
+    font-family: Universe;
+    src: url(../font/UniversLTStd-Bold.otf);
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 25px;
+    position: absolute;
+}
+
+.chore {
+    font-size: 30px;
+    font-family: Universe;
+    color: #c2e8fb;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 90px;
+}
+
+.blackBar {
+    width: 100%;
+    background-color: black;
+    height: 65px;
+}
+
+.blueBar {
+    width: 100%;
+    background-color: #c2e8fb;
+    height: 15px;
+}
+
+.indexImg {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.welcome {
+    font-size: 17px;
+    color: white;
+    font-family: Universe;
+    width: 400px;
+}
+
+.welcomeDiv {
+    margin-top: 490px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.formParams {
+    position: absolute;
+    width: 380px;
+    margin-top: 50px;
+}
+
+.signUpToday {
+    font-size: 25px;
+    color: Black;
+    font-family: Universe;
+}
+
+.parentFirstName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#parentFirstName {
+    color: white;
+    padding-top: 5px;
+}
+
+.parentLastName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#parentLastName {
+    color: white;
+    padding-top: 5px;
+}
+
+.parentEmail {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#parentEmail {
+    color: white;
+    padding-top: 5px;
+}
+
+.parentUserName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 158.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#parentUserName {
+    color: white;
+    padding-top: 10px;
+}
+
+.parentPassword {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 158.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px
+}
+
+#parentPassword {
+    color: white;
+    padding-top: 10px;
+}
+
+.signUp {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Universe;
+    margin-top: 10px;
+}
+
+
+.formParams2 {
+    position: absolute;
+    width: 380px;
+    margin-top: 400px;
+}
+
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width: 28px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display: inline-block;
+  margin-left: -28px;
+  margin-top:  15px;
+  padding-left: 35px;
+  background: url("../assets/radioChange.png") no-repeat 0 0;
+  line-height: 31px;
+}
+
+input[type=checkbox]:not(old):checked + label{
+    background-position: 0 -38px;
+  } 
+  
+  input[type=radio]:not(old):checked + label{
+    background-position: 0 -48px;
+  }
+
+  .radioOne {
+    position: absolute;
+}
+
+.radioTwo {
+    position: relative;
+    margin-left: 100px;
+}
+
+.logInForm {
+    font-size: 25px;
+    color: Black;
+    font-family: Universe;
+}
+
+.userName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#userName {
+    color: white;
+    padding-top: 5px;
+}
+
+.password {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#password {
+    color: white;
+    padding-top: 5px;
+}
+
+
+.logIn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Universe;
+    margin-top: 10px;
+}
+
+/* footer styles */
+
+.footerCon {
+  position: fixed;
+  margin-top: 17px;
+  float: left;
+  width: 100%;
+  bottom: 0px;
+}
+
+.footerBlack {
+    width: 100%;
+    background-color: black;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerBlue {
+    width: 100%;
+    background-color: #c2e8fb;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    font-size: 12px;
+    color: white;
+}
+
+
+/* Parent Main Page  */
+
+.parentNav {
+    font-size: 30px;
+    font-family: Universe;
+    color: white;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 90px;
+}
+
+.logOut {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: Universe;
+}
+
+.dropDownBox {
+    width: 197px;
+    height: 40px;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 0px;
+}
+
+.dropdown-menu {
+    font-family: Universe;
+}
+
+.kids {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Universe;
+}
+
+.changeKids {
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.dropArrow {
+    float: right;
+    margin-top: -30px;
+    margin-right: 15px;
+}
+
+.calendarParent {
+    background-color: black;
+    height: 470px;
+}
+
+.rewardsParent {
+    background-color: #c2e8fb;
+    height: 470px;
+}
+
+.theDay {
+    font-size: 38px;
+    color: white;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+
+.theDate {
+    font-size: 30px;
+    color: #c2e8fb;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.calendarC {
+    margin-left: 190px;
+    margin-top: 100px;
+}
+
+.cArrowL {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 90px;
+}
+
+.cArrowR {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 25px;
+}
+
+.choresDone {
+    font-size: 75px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 290px;
+    z-index: 20;
+}
+
+.col-lg-6 {
+    margin-top: -22px;
+}
+
+.choreListName {
+    font-size: 38px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -420px;
+
+}
+
+.choreListItems {
+    font-size: 25px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -340px;
+
+}
+
+.redCheck {
+    position: absolute;
+    z-index: 50;
+    margin-top: -370px;
+    margin-left: 455px;
+}
+
+.yellowCheck {
+    position: absolute;
+    z-index: 50;
+    margin-top: -285px;
+    margin-left: 180px;
+}
+.redX {
+    position: absolute;
+    z-index: 50;
+    margin-top: -285px;
+    margin-left: 250px;
+}
+
+.greenCheck {
+    position: absolute;
+    z-index: 50;
+    margin-top: -200px;
+    margin-left: 230px;
+}
+
+.addChoresBtn {
+    position: absolute;
+    z-index: 50;
+    margin-top: -100px;
+    margin-left: 500px;
+}
+
+.addChoresParent {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    z-index: 50;
+    margin-top: -55px;
+    margin-left: 390px;
+}
+
+.rewardsTitleParent {
+    font-size: 38px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+
+.pointsTotalParent {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.rewardOne {
+    font-size: 30px;
+    color: #af5c60;
+    font-family: Universe;
+    position: absolute;
+    text-align: center;
+    margin-top: 130px;
+    margin-left: 270px;
+}
+
+.moveDown {
+    margin-top: 21px;
+}
+
+.numFix {
+    font-size: 50px;
+}
+
+.rewardTwo {
+    font-size: 30px;
+    color: white;
+    font-family: Universe;
+    position: absolute;
+    text-align: center;
+    margin-top: 240px;
+    margin-left: 270px;
+}
+
+.numFix2 {
+    font-size: 50px;
+}
+
+.rewardsScroll {
+    margin-top: 350px;
+    margin-left: 330px;
+}
+
+.addRewardsBtn {
+    position: absolute;
+    z-index: 50;
+    margin-top: -40px;
+    margin-left: 550px;
+}
+
+.addRewardsParent {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    z-index: 50;
+    margin-top: px;
+    margin-left: 420px;
+}
+
+.addChoresTitle {
+    font-size: 38px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -420px;
+
+}
+
+.choresName {
+    font-size: 30px;
+    color: #c2e8fb
+}
+
+.moveFormUp {
+    margin-top: -350px;
+}
+
+.choreName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#choreName {
+    color: white;
+    padding-top: 5px;
+}
+
+.selectPointAmount {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#selectPointAmount {
+    color: white;
+    padding-top: 5px;
+}
+
+.dueDate {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#dueDate {
+    color: white;
+    padding-top: 5px;
+}
+
+.timeBox {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 158.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#timeBox {
+    color: white;
+    padding-top: 5px;
+}
+
+.schedule {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 158.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px
+}
+
+#schedule {
+    color: white;
+    padding-top: 5px;
+}
+
+.submitChores {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Universe;
+    margin-top: 15px;
+}
+
+.choreBar {
+    width: 100%;
+    background-color: #c2e8fb;
+    height: 470px;
+}
+
+.backMainBtn {
+    position: absolute;
+    z-index: 50;
+    margin-top: 20px;
+}
+
+.backMainParent {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    z-index: 50;
+    margin-left: -130px;
+    margin-top: 70px;
+}
+
+.choreItems {
+    font-size: 25px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.redCheckChoreP {
+    position: absolute;
+    z-index: 50;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+.yellowCheckChoreP {
+    position: absolute;
+    z-index: 50;
+    margin-top: 130px;
+    margin-left: 225px;
+}
+
+.greenCheckChoreP {
+    position: absolute;
+    z-index: 50;
+    margin-top: 210px;
+    margin-left: 275px;
+}
+
+/* Add rewards Page */
+
+.addRewardsTitle {
+    font-size: 38px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -420px;
+
+}
+
+.rewardName {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#rewardName {
+    color: white;
+    padding-top: 5px;
+}
+
+.amazonWishLists {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#amazonWishLists {
+    color: white;
+    padding-top: 5px;
+}
+
+.amountPoints {
+    font-size: 18px;
+    font-family: Universe;
+    color: white;
+    background: black;
+    width: 337px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#amountPoints {
+    color: white;
+    padding-top: 5px;
+}
+
+.submitRewards {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Universe;
+    margin-top: 15px;
+}
+
+.availableRewards {
+    width: 100%;
+    background-color: #c2e8fb;
+    height: 550px;
+}
+
+.availableTitle {
+    font-size: 38px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.rewardItems {
+    font-size: 25px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.riNum {
+    font-size: 35px;
+}
+
+.rewardsNum {
+    position: absolute;
+    color: white;
+    margin-left: 400px;
+    margin-top: 77px;
+}
+
+.itemOne {
+    color: #af5c60;
+}
+
+li {
+    list-style: none;
+}
+
+.bought {
+    font-size: 38px;
+    color: white;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+
+.rewardsTitle {
+    font-size: 30px;
+    color: #c2e8fb;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.itemBought {
+    font-size: 40px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 240px;
+    z-index: 20;
+}
+
+.earned {
+    font-size: 25spx;
+    color: #c2e8fb;
+    font-family: Universe;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 260px;
+    z-index: 20;
+}
+
+/* Child Main Page */
+
+.childNav {
+    font-size: 30px;
+    font-family: Universe;
+    color: white;
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 90px;
+}
+
+.theDayChild {
+    font-size: 38px;
+    color: black;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+
+.calendarChild {
+    background-color: white;
+    height: 470px;
+    margin-top: 30px;
+}
+
+
+.calendarCBlack {
+    margin-left: 190px;
+    margin-top: 100px;
+}
+
+.cArrowLBlack {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 90px;
+}
+
+.cArrowRBlack {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 25px;
+}
+
+.choresDoneChild {
+    font-size: 75px;
+    color: white;
+    font-family: Universe;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 290px;
+    z-index: 20;
+}
+
+.yourChoresTitle {
+    font-size: 38px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -440px;
+    margin-left: 40px;
+
+}
+
+.childBoxTwo {
+    background-color: #c2e8fb;
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    margin-top: -478px;
+}
+
+.childChoreItems {
+    font-size: 25px;
+    color: black;
+    font-family: Universe;
+    position: absolute;
+    z-index: 40;
+    margin-top: -370px;
+    margin-left: 50px;
+}
+
+.numLarger {
+    font-size: 35px;
+}
+
+.redCheckChoreC {
+    position: absolute;
+    z-index: 50;
+    margin-top: -390px;
+    margin-left: 540px;
+}
+
+.yellowCheckChoreC {
+    position: absolute;
+    z-index: 50;
+    margin-top: -300px;
+    margin-left: 270px;
+}
+
+.greenCheckChoreC {
+    position: absolute;
+    z-index: 50;
+    margin-top: -200px;
+    margin-left: 320px;
+}
+
+.rewardBar {
+    width: 100%;
+    background-color: black;
+    height: 600px;
+    margin-top: -10px;
+}
+
+.childRewards {
+    color: white;
+    font-family: Universe;
+    position: absolute;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.pointCount {
+    color: white;
+    font-family: Universe;
+    position: absolute;
+    font-size: 55px;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+@keyframes fillin1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 1%;
+    }
+  }
+  .circle[data-percent="1%"]:before {
+    animation: 1s fillin1 ease forwards;
+  }
+  .circle2[data-percent="1%"]:before {
+    animation: 1s fillin1 ease forwards;
+  }
+  .circle3[data-percent="1%"]:before {
+    animation: 1s fillin1 ease forwards;
+  }
+  
+  @keyframes fillin2 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 2%;
+    }
+  }
+  .circle[data-percent="2%"]:before {
+    animation: 1s fillin2 ease forwards;
+  }
+  .circle2[data-percent="2%"]:before {
+    animation: 1s fillin2 ease forwards;
+  }
+  .circle3[data-percent="2%"]:before {
+    animation: 1s fillin2 ease forwards;
+  }
+  
+  @keyframes fillin3 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 3%;
+    }
+  }
+  .circle[data-percent="3%"]:before {
+    animation: 1s fillin3 ease forwards;
+  }
+  .circle2[data-percent="3%"]:before {
+    animation: 1s fillin3 ease forwards;
+  }
+  .circle3[data-percent="3%"]:before {
+    animation: 1s fillin3 ease forwards;
+  }
+  
+  @keyframes fillin4 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 4%;
+    }
+  }
+  .circle[data-percent="4%"]:before {
+    animation: 1s fillin4 ease forwards;
+  }
+  .circle2[data-percent="4%"]:before {
+    animation: 1s fillin4 ease forwards;
+  }
+  .circle3[data-percent="4%"]:before {
+    animation: 1s fillin4 ease forwards;
+  }
+  
+  @keyframes fillin5 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 5%;
+    }
+  }
+  .circle[data-percent="5%"]:before {
+    animation: 1s fillin5 ease forwards;
+  }
+  .circle2[data-percent="5%"]:before {
+    animation: 1s fillin5 ease forwards;
+  }
+  .circle3[data-percent="5%"]:before {
+    animation: 1s fillin5 ease forwards;
+  }
+  
+  @keyframes fillin6 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 6%;
+    }
+  }
+  .circle[data-percent="6%"]:before {
+    animation: 1s fillin6 ease forwards;
+  }
+  .circle2[data-percent="6%"]:before {
+    animation: 1s fillin6 ease forwards;
+  }
+  .circle3[data-percent="6%"]:before {
+    animation: 1s fillin6 ease forwards;
+  }
+  
+  @keyframes fillin7 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 7%;
+    }
+  }
+  .circle[data-percent="7%"]:before {
+    animation: 1s fillin7 ease forwards;
+  }
+  .circle2[data-percent="7%"]:before {
+    animation: 1s fillin7 ease forwards;
+  }
+  .circle3[data-percent="7%"]:before {
+    animation: 1s fillin7 ease forwards;
+  }
+  
+  @keyframes fillin8 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 8%;
+    }
+  }
+  .circle[data-percent="8%"]:before {
+    animation: 1s fillin8 ease forwards;
+  }
+  .circle2[data-percent="8%"]:before {
+    animation: 1s fillin8 ease forwards;
+  }
+  .circle3[data-percent="8%"]:before {
+    animation: 1s fillin8 ease forwards;
+  }
+  
+  @keyframes fillin9 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 9%;
+    }
+  }
+  .circle[data-percent="9%"]:before {
+    animation: 1s fillin9 ease forwards;
+  }
+  .circle2[data-percent="9%"]:before {
+    animation: 1s fillin9 ease forwards;
+  }
+  .circle3[data-percent="9%"]:before {
+    animation: 1s fillin9 ease forwards;
+  }
+  
+  
+  @keyframes fillin10 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 10%;
+    }
+  }
+  .circle[data-percent="10%"]:before {
+    animation: 1s fillin10 ease forwards;
+  }
+  .circle2[data-percent="10%"]:before {
+    animation: 1s fillin10 ease forwards;
+  }
+  .circle3[data-percent="10%"]:before {
+    animation: 1s fillin10 ease forwards;
+  }
+  
+  @keyframes fillin11 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 11%;
+    }
+  }
+  .circle[data-percent="11%"]:before {
+    animation: 1s fillin11 ease forwards;
+  }
+  .circle2[data-percent="11%"]:before {
+    animation: 1s fillin11 ease forwards;
+  }
+  .circle3[data-percent="11%"]:before {
+    animation: 1s fillin11 ease forwards;
+  }
+  
+  @keyframes fillin12 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 12%;
+    }
+  }
+  .circle[data-percent="12%"]:before {
+    animation: 1s fillin12 ease forwards;
+  }
+  .circle2[data-percent="12%"]:before {
+    animation: 1s fillin12 ease forwards;
+  }
+  .circle3[data-percent="12%"]:before {
+    animation: 1s fillin12 ease forwards;
+  }
+  
+  @keyframes fillin13 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 13%;
+    }
+  }
+  .circle[data-percent="13%"]:before {
+    animation: 1s fillin13 ease forwards;
+  }
+  .circle2[data-percent="13%"]:before {
+    animation: 1s fillin13 ease forwards;
+  }
+  .circle3[data-percent="13%"]:before {
+    animation: 1s fillin13 ease forwards;
+  }
+  
+  @keyframes fillin14 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 14%;
+    }
+  }
+  .circle[data-percent="14%"]:before {
+    animation: 1s fillin14 ease forwards;
+  }
+  .circle2[data-percent="14%"]:before {
+    animation: 1s fillin14 ease forwards;
+  }
+  .circle3[data-percent="14%"]:before {
+    animation: 1s fillin14 ease forwards;
+  }
+  
+  @keyframes fillin15 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 15%;
+    }
+  }
+  .circle[data-percent="15%"]:before {
+    animation: 1s fillin15 ease forwards;
+  }
+  .circle2[data-percent="15%"]:before {
+    animation: 1s fillin15 ease forwards;
+  }
+  .circle3[data-percent="15%"]:before {
+    animation: 1s fillin15 ease forwards;
+  }
+  
+  @keyframes fillin16 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 16%;
+    }
+  }
+  .circle[data-percent="16%"]:before {
+    animation: 1s fillin16 ease forwards;
+  }
+  .circle2[data-percent="16%"]:before {
+    animation: 1s fillin16 ease forwards;
+  }
+  .circle3[data-percent="16%"]:before {
+    animation: 1s fillin16 ease forwards;
+  }
+  
+  @keyframes fillin17 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 17%;
+    }
+  }
+  .circle[data-percent="17%"]:before {
+    animation: 1s fillin17 ease forwards;
+  }
+  .circle2[data-percent="17%"]:before {
+    animation: 1s fillin17 ease forwards;
+  }
+  .circle3[data-percent="17%"]:before {
+    animation: 1s fillin17 ease forwards;
+  }
+  
+  @keyframes fillin18 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 18%;
+    }
+  }
+  .circle[data-percent="18%"]:before {
+    animation: 1s fillin18 ease forwards;
+  }
+  .circle2[data-percent="18%"]:before {
+    animation: 1s fillin18 ease forwards;
+  }
+  .circle3[data-percent="18%"]:before {
+    animation: 1s fillin18 ease forwards;
+  }
+  
+  @keyframes fillin19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 19%;
+    }
+  }
+  .circle[data-percent="19%"]:before {
+    animation: 1s fillin19 ease forwards;
+  }
+  .circle2[data-percent="19%"]:before {
+    animation: 1s fillin19 ease forwards;
+  }
+  .circle3[data-percent="19%"]:before {
+    animation: 1s fillin19 ease forwards;
+  }
+  
+  @keyframes fillin20 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 20%;
+    }
+  }
+  .circle[data-percent="20%"]:before {
+    animation: 1s fillin20 ease forwards;
+  }
+  .circle2[data-percent="20%"]:before {
+    animation: 1s fillin20 ease forwards;
+  }
+  .circle3[data-percent="20%"]:before {
+    animation: 1s fillin20 ease forwards;
+  }
+  
+  @keyframes fillin21 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 21%;
+    }
+  }
+  .circle[data-percent="21%"]:before {
+    animation: 1s fillin21 ease forwards;
+  }
+  .circle2[data-percent="21%"]:before {
+    animation: 1s fillin21 ease forwards;
+  }
+  .circle3[data-percent="21%"]:before {
+    animation: 1s fillin21 ease forwards;
+  }
+  
+  
+  @keyframes fillin22 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 22%;
+    }
+  }
+  .circle[data-percent="22%"]:before {
+    animation: 1s fillin22 ease forwards;
+  }
+  .circle2[data-percent="22%"]:before {
+    animation: 1s fillin22 ease forwards;
+  }
+  .circle3[data-percent="22%"]:before {
+    animation: 1s fillin22 ease forwards;
+  }
+  
+  @keyframes fillin23 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 23%;
+    }
+  }
+  .circle[data-percent="23%"]:before {
+    animation: 1s fillin23 ease forwards;
+  }
+  .circle2[data-percent="23%"]:before {
+    animation: 1s fillin23 ease forwards;
+  }
+  .circle3[data-percent="23%"]:before {
+    animation: 1s fillin23 ease forwards;
+  }
+  
+  @keyframes fillin24 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 24%;
+    }
+  }
+  .circle[data-percent="24%"]:before {
+    animation: 1s fillin24 ease forwards;
+  }
+  .circle2[data-percent="24%"]:before {
+    animation: 1s fillin24 ease forwards;
+  }
+  .circle3[data-percent="24%"]:before {
+    animation: 1s fillin24 ease forwards;
+  }
+  
+  @keyframes fillin25 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 25%;
+    }
+  }
+  .circle[data-percent="25%"]:before {
+    animation: 1s fillin25 ease forwards;
+  }
+  .circle2[data-percent="25%"]:before {
+    animation: 1s fillin25 ease forwards;
+  }
+  .circle3[data-percent="25%"]:before {
+    animation: 1s fillin25 ease forwards;
+  }
+
+  @keyframes fillin26 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 26%;
+    }
+  }
+  .circle[data-percent="26%"]:before {
+    animation: 1s fillin26 ease forwards;
+  }
+  .circle2[data-percent="26%"]:before {
+    animation: 1s fillin26 ease forwards;
+  }
+  .circle3[data-percent="26%"]:before {
+    animation: 1s fillin26 ease forwards;
+  }
+  
+  @keyframes fillin27 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 27%;
+    }
+  }
+  .circle[data-percent="27%"]:before {
+    animation: 1s fillin27 ease forwards;
+  }
+  .circle2[data-percent="27%"]:before {
+    animation: 1s fillin27 ease forwards;
+  }
+  .circle3[data-percent="27%"]:before {
+    animation: 1s fillin27 ease forwards;
+  }
+  
+  @keyframes fillin28 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 28%;
+    }
+  }
+  .circle[data-percent="28%"]:before {
+    animation: 1s fillin28 ease forwards;
+  }
+  .circle2[data-percent="28%"]:before {
+    animation: 1s fillin28 ease forwards;
+  }
+  .circle3[data-percent="28%"]:before {
+    animation: 1s fillin28 ease forwards;
+  }
+
+  @keyframes fillin29 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 29%;
+    }
+  }
+  .circle[data-percent="29%"]:before {
+    animation: 1s fillin29 ease forwards;
+  }
+  .circle2[data-percent="29%"]:before {
+    animation: 1s fillin29 ease forwards;
+  }
+  .circle3[data-percent="29%"]:before {
+    animation: 1s fillin29 ease forwards;
+  }
+  
+  
+  @keyframes fillin30 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 30%;
+    }
+  }
+  .circle[data-percent="30%"]:before {
+    animation: 1s fillin30 ease forwards;
+  }
+  .circle2[data-percent="30%"]:before {
+    animation: 1s fillin30 ease forwards;
+  }
+  .circle3[data-percent="30%"]:before {
+    animation: 1s fillin30 ease forwards;
+  }
+  
+  @keyframes fillin31 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 31%;
+    }
+  }
+  .circle[data-percent="31%"]:before {
+    animation: 1s fillin31 ease forwards;
+  }
+  .circle2[data-percent="31%"]:before {
+    animation: 1s fillin31 ease forwards;
+  }
+  .circle3[data-percent="31%"]:before {
+    animation: 1s fillin31 ease forwards;
+  }
+  
+  
+  @keyframes fillin32 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 32%;
+    }
+  }
+  .circle[data-percent="32%"]:before {
+    animation: 1s fillin32 ease forwards;
+  }
+  .circle2[data-percent="32%"]:before {
+    animation: 1s fillin32 ease forwards;
+  }
+  .circle3[data-percent="32%"]:before {
+    animation: 1s fillin32 ease forwards;
+  }
+  
+  @keyframes fillin33 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 33%;
+    }
+  }
+  .circle[data-percent="33%"]:before {
+    animation: 1s fillin33 ease forwards;
+  }
+  .circle2[data-percent="33%"]:before {
+    animation: 1s fillin33 ease forwards;
+  }
+  .circle3[data-percent="33%"]:before {
+    animation: 1s fillin33 ease forwards;
+  }
+  
+  @keyframes fillin34 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 34%;
+    }
+  }
+  .circle[data-percent="34%"]:before {
+    animation: 1s fillin34 ease forwards;
+  }
+  .circle2[data-percent="34%"]:before {
+    animation: 1s fillin34 ease forwards;
+  }
+  .circle3[data-percent="34%"]:before {
+    animation: 1s fillin34 ease forwards;
+  }
+  
+  
+  @keyframes fillin35 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 35%;
+    }
+  }
+  .circle[data-percent="35%"]:before {
+    animation: 1s fillin35 ease forwards;
+  }
+  .circle2[data-percent="35%"]:before {
+    animation: 1s fillin35 ease forwards;
+  }
+  .circle3[data-percent="35%"]:before {
+    animation: 1s fillin35 ease forwards;
+  }
+  
+  @keyframes fillin36 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 36%;
+    }
+  }
+  .circle[data-percent="36%"]:before {
+    animation: 1s fillin36 ease forwards;
+  }
+  .circle2[data-percent="36%"]:before {
+    animation: 1s fillin36 ease forwards;
+  }
+  .circle3[data-percent="36%"]:before {
+    animation: 1s fillin36 ease forwards;
+  }
+
+  @keyframes fillin37 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 37%;
+    }
+  }
+  .circle[data-percent="37%"]:before {
+    animation: 1s fillin37 ease forwards;
+  }
+  .circle2[data-percent="37%"]:before {
+    animation: 1s fillin37 ease forwards;
+  }
+  .circle3[data-percent="37%"]:before {
+    animation: 1s fillin37 ease forwards;
+  }
+
+  @keyframes fillin38 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 38%;
+    }
+  }
+  .circle[data-percent="38%"]:before {
+    animation: 1s fillin38 ease forwards;
+  }
+  .circle2[data-percent="38%"]:before {
+    animation: 1s fillin38 ease forwards;
+  }
+  .circle3[data-percent="38%"]:before {
+    animation: 1s fillin38 ease forwards;
+  }
+  
+  @keyframes fillin39 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 39%;
+    }
+  }
+  .circle[data-percent="39%"]:before {
+    animation: 1s fillin39 ease forwards;
+  }
+  .circle2[data-percent="39%"]:before {
+    animation: 1s fillin39 ease forwards;
+  }
+  .circle3[data-percent="39%"]:before {
+    animation: 1s fillin39 ease forwards;
+  }
+  
+  @keyframes fillin40 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 40%;
+    }
+  }
+  .circle[data-percent="40%"]:before {
+    animation: 1s fillin40 ease forwards;
+  }
+  .circle2[data-percent="40%"]:before {
+    animation: 1s fillin40 ease forwards;
+  }
+  .circle3[data-percent="40%"]:before {
+    animation: 1s fillin40 ease forwards;
+  }
+  
+  @keyframes fillin41 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 41%;
+    }
+  }
+  .circle[data-percent="41%"]:before {
+    animation: 1s fillin41 ease forwards;
+  }
+  .circle2[data-percent="41%"]:before {
+    animation: 1s fillin41 ease forwards;
+  }
+  .circle3[data-percent="41%"]:before {
+    animation: 1s fillin41 ease forwards;
+  }
+  
+  @keyframes fillin42 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 42%;
+    }
+  }
+  .circle[data-percent="42%"]:before {
+    animation: 1s fillin42 ease forwards;
+  }
+  .circle2[data-percent="42%"]:before {
+    animation: 1s fillin42 ease forwards;
+  }
+  .circle3[data-percent="42%"]:before {
+    animation: 1s fillin42 ease forwards;
+  }
+  
+  @keyframes fillin43 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 43%;
+    }
+  }
+  .circle[data-percent="43%"]:before {
+    animation: 1s fillin43 ease forwards;
+  }
+  .circle2[data-percent="43%"]:before {
+    animation: 1s fillin43 ease forwards;
+  }
+  .circle3[data-percent="43%"]:before {
+    animation: 1s fillin43 ease forwards;
+  }
+  
+  @keyframes fillin44 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 44%;
+    }
+  }
+  .circle[data-percent="44%"]:before {
+    animation: 1s fillin44 ease forwards;
+  }
+  .circle2[data-percent="44%"]:before {
+    animation: 1s fillin44 ease forwards;
+  }
+  .circle3[data-percent="44%"]:before {
+    animation: 1s fillin44 ease forwards;
+  }
+  
+  @keyframes fillin45 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 45%;
+    }
+  }
+  .circle[data-percent="45%"]:before {
+    animation: 1s fillin45 ease forwards;
+  }
+  .circle2[data-percent="45%"]:before {
+    animation: 1s fillin45 ease forwards;
+  }
+  .circle3[data-percent="45%"]:before {
+    animation: 1s fillin45 ease forwards;
+  }
+  
+  @keyframes fillin46 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 46%;
+    }
+  }
+  .circle[data-percent="46%"]:before {
+    animation: 1s fillin46 ease forwards;
+  }
+  .circle2[data-percent="46%"]:before {
+    animation: 1s fillin46 ease forwards;
+  }
+  .circle3[data-percent="46%"]:before {
+    animation: 1s fillin46 ease forwards;
+  }
+  
+  @keyframes fillin47 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 47%;
+    }
+  }
+  .circle[data-percent="47%"]:before {
+    animation: 1s fillin47 ease forwards;
+  }
+  .circle2[data-percent="47%"]:before {
+    animation: 1s fillin47 ease forwards;
+  }
+  .circle3[data-percent="47%"]:before {
+    animation: 1s fillin47 ease forwards;
+  }
+
+  @keyframes fillin48 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 48%;
+    }
+  }
+  .circle[data-percent="48%"]:before {
+    animation: 1s fillin48 ease forwards;
+  }
+  .circle2[data-percent="48%"]:before {
+    animation: 1s fillin48 ease forwards;
+  }
+  .circle3[data-percent="48%"]:before {
+    animation: 1s fillin48 ease forwards;
+  }
+  
+  @keyframes fillin49 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 49%;
+    }
+  }
+  .circle[data-percent="49%"]:before {
+    animation: 1s fillin49 ease forwards;
+  }
+  .circle2[data-percent="49%"]:before {
+    animation: 1s fillin49 ease forwards;
+  }
+  .circle3[data-percent="49%"]:before {
+    animation: 1s fillin49 ease forwards;
+  }
+  
+  @keyframes fillin50 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 50%;
+    }
+  }
+  .circle[data-percent="50%"]:before {
+    animation: 1s fillin50 ease forwards;
+  }
+  .circle2[data-percent="50%"]:before {
+    animation: 1s fillin50 ease forwards;
+  }
+  .circle3[data-percent="50%"]:before {
+    animation: 1s fillin50 ease forwards;
+  }
+  
+  @keyframes fillin51 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 51%;
+    }
+  }
+  .circle[data-percent="51%"]:before {
+    animation: 1s fillin51 ease forwards;
+  }
+  .circle2[data-percent="51%"]:before {
+    animation: 1s fillin51 ease forwards;
+  }
+  .circle3[data-percent="51%"]:before {
+    animation: 1s fillin51 ease forwards;
+  }
+  
+  @keyframes fillin52 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 52%;
+    }
+  }
+  .circle[data-percent="52%"]:before {
+    animation: 1s fillin52 ease forwards;
+  }
+  .circle2[data-percent="52%"]:before {
+    animation: 1s fillin52 ease forwards;
+  }
+  .circle3[data-percent="52%"]:before {
+    animation: 1s fillin52 ease forwards;
+  }
+  
+  @keyframes fillin53 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 53%;
+    }
+  }
+  .circle[data-percent="53%"]:before {
+    animation: 1s fillin53 ease forwards;
+  }
+  .circle2[data-percent="53%"]:before {
+    animation: 1s fillin53 ease forwards;
+  }
+  .circle3[data-percent="53%"]:before {
+    animation: 1s fillin53 ease forwards;
+  }
+  
+  @keyframes fillin54 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 54%;
+    }
+  }
+  .circle[data-percent="54%"]:before {
+    animation: 1s fillin54 ease forwards;
+  }
+  .circle2[data-percent="54%"]:before {
+    animation: 1s fillin54 ease forwards;
+  }
+  .circle3[data-percent="54%"]:before {
+    animation: 1s fillin54 ease forwards;
+  }
+
+  @keyframes fillin55 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 55%;
+    }
+  }
+  .circle[data-percent="55%"]:before {
+    animation: 1s fillin55 ease forwards;
+  }
+  .circle2[data-percent="55%"]:before {
+    animation: 1s fillin55 ease forwards;
+  }
+  .circle3[data-percent="55%"]:before {
+    animation: 1s fillin55 ease forwards;
+  }
+  
+  @keyframes fillin56 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 56%;
+    }
+  }
+  .circle[data-percent="56%"]:before {
+    animation: 1s fillin56 ease forwards;
+  }
+  .circle2[data-percent="56%"]:before {
+    animation: 1s fillin56 ease forwards;
+  }
+  .circle3[data-percent="56%"]:before {
+    animation: 1s fillin56 ease forwards;
+  }
+  
+  @keyframes fillin57 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 57%;
+    }
+  }
+  .circle[data-percent="57%"]:before {
+    animation: 1s fillin57 ease forwards;
+  }
+  .circle2[data-percent="57%"]:before {
+    animation: 1s fillin57 ease forwards;
+  }
+  .circle3[data-percent="57%"]:before {
+    animation: 1s fillin57 ease forwards;
+  }
+  
+  @keyframes fillin58 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 58%;
+    }
+  }
+  .circle[data-percent="58%"]:before {
+    animation: 1s fillin58 ease forwards;
+  }
+  .circle2[data-percent="58%"]:before {
+    animation: 1s fillin58 ease forwards;
+  }
+  .circle3[data-percent="58%"]:before {
+    animation: 1s fillin58 ease forwards;
+  }
+  
+  @keyframes fillin59 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 59%;
+    }
+  }
+  .circle[data-percent="59%"]:before {
+    animation: 1s fillin59 ease forwards;
+  }
+  .circle2[data-percent="59%"]:before {
+    animation: 1s fillin59 ease forwards;
+  }
+  .circle3[data-percent="59%"]:before {
+    animation: 1s fillin59 ease forwards;
+  }
+  
+  @keyframes fillin60 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 60%;
+    }
+  }
+  .circle[data-percent="60%"]:before {
+    animation: 1s fillin60 ease forwards;
+  }
+  .circle2[data-percent="60%"]:before {
+    animation: 1s fillin60 ease forwards;
+  }
+  .circle3[data-percent="60%"]:before {
+    animation: 1s fillin60 ease forwards;
+  }
+  @keyframes fillin61 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 61%;
+    }
+  }
+  .circle[data-percent="61%"]:before {
+    animation: 1s fillin61 ease forwards;
+  }
+  .circle2[data-percent="61%"]:before {
+    animation: 1s fillin61 ease forwards;
+  }
+  .circle3[data-percent="61%"]:before {
+    animation: 1s fillin61 ease forwards;
+  }
+  
+  @keyframes fillin62 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 62%;
+    }
+  }
+  .circle[data-percent="62%"]:before {
+    animation: 1s fillin62 ease forwards;
+  }
+  .circle2[data-percent="62%"]:before {
+    animation: 1s fillin62 ease forwards;
+  }
+  .circle3[data-percent="62%"]:before {
+    animation: 1s fillin62 ease forwards;
+  }
+  
+  @keyframes fillin63 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 63%;
+    }
+  }
+  .circle[data-percent="63%"]:before {
+    animation: 1s fillin63 ease forwards;
+  }
+  .circle2[data-percent="63%"]:before {
+    animation: 1s fillin63 ease forwards;
+  }
+  .circle3[data-percent="63%"]:before {
+    animation: 1s fillin63 ease forwards;
+  }
+  
+  @keyframes fillin64 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 64%;
+    }
+  }
+  .circle[data-percent="64%"]:before {
+    animation: 1s fillin64 ease forwards;
+  }
+  .circle2[data-percent="64%"]:before {
+    animation: 1s fillin64 ease forwards;
+  }
+  .circle3[data-percent="64%"]:before {
+    animation: 1s fillin64 ease forwards;
+  }
+  
+  @keyframes fillin65 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 65%;
+    }
+  }
+  .circle[data-percent="65%"]:before {
+    animation: 1s fillin65 ease forwards;
+  }
+  .circle2[data-percent="65%"]:before {
+    animation: 1s fillin65 ease forwards;
+  }
+  .circle3[data-percent="65%"]:before {
+    animation: 1s fillin65 ease forwards;
+  }
+
+  @keyframes fillin66 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 66%;
+    }
+  }
+  .circle[data-percent="66%"]:before {
+    animation: 1s fillin66 ease forwards;
+  }
+  .circle2[data-percent="66%"]:before {
+    animation: 1s fillin66 ease forwards;
+  }
+  .circle3[data-percent="66%"]:before {
+    animation: 1s fillin66 ease forwards;
+  }
+  
+  @keyframes fillin67 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 67%;
+    }
+  }
+  .circle[data-percent="67%"]:before {
+    animation: 1s fillin67 ease forwards;
+  }
+  .circle2[data-percent="67%"]:before {
+    animation: 1s fillin67 ease forwards;
+  }
+  .circle3[data-percent="67%"]:before {
+    animation: 1s fillin67 ease forwards;
+  }
+  
+  @keyframes fillin68 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 68%;
+    }
+  }
+  .circle[data-percent="68%"]:before {
+    animation: 1s fillin68 ease forwards;
+  }
+  .circle2[data-percent="68%"]:before {
+    animation: 1s fillin68 ease forwards;
+  }
+  .circle3[data-percent="68%"]:before {
+    animation: 1s fillin68 ease forwards;
+  }
+  
+  @keyframes fillin69 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 69%;
+    }
+  }
+  .circle[data-percent="69%"]:before {
+    animation: 1s fillin69 ease forwards;
+  }
+  .circle2[data-percent="69%"]:before {
+    animation: 1s fillin69 ease forwards;
+  }
+  .circle3[data-percent="69%"]:before {
+    animation: 1s fillin69 ease forwards;
+  }
+  
+  @keyframes fillin70 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 70%;
+    }
+  }
+  .circle[data-percent="70%"]:before {
+    animation: 1s fillin70 ease forwards;
+  }
+  .circle2[data-percent="70%"]:before {
+    animation: 1s fillin70 ease forwards;
+  }
+  .circle3[data-percent="70%"]:before {
+    animation: 1s fillin70 ease forwards;
+  }
+  
+  @keyframes fillin71 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 71%;
+    }
+  }
+  .circle[data-percent="71%"]:before {
+    animation: 1s fillin71 ease forwards;
+  }
+  .circle2[data-percent="71%"]:before {
+    animation: 1s fillin71 ease forwards;
+  }
+  .circle3[data-percent="71%"]:before {
+    animation: 1s fillin71 ease forwards;
+  }
+  
+  @keyframes fillin72 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 72%;
+    }
+  }
+  .circle[data-percent="72%"]:before {
+    animation: 1s fillin72 ease forwards;
+  }
+  .circle2[data-percent="72%"]:before {
+    animation: 1s fillin72 ease forwards;
+  }
+  .circle3[data-percent="72%"]:before {
+    animation: 1s fillin72 ease forwards;
+  }
+  
+  @keyframes fillin73 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 73%;
+    }
+  }
+  .circle[data-percent="73%"]:before {
+    animation: 1s fillin73 ease forwards;
+  }
+  .circle2[data-percent="73%"]:before {
+    animation: 1s fillin73 ease forwards;
+  }
+  .circle3[data-percent="73%"]:before {
+    animation: 1s fillin73 ease forwards;
+  }
+  
+  @keyframes fillin74 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 74%;
+    }
+  }
+  .circle[data-percent="74%"]:before {
+    animation: 1s fillin74 ease forwards;
+  }
+  .circle2[data-percent="74%"]:before {
+    animation: 1s fillin74 ease forwards;
+  }
+  .circle3[data-percent="74%"]:before {
+    animation: 1s fillin74 ease forwards;
+  }
+  
+  @keyframes fillin75 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 75%;
+    }
+  }
+  .circle[data-percent="75%"]:before {
+    animation: 1s fillin75 ease forwards;
+  }
+  .circle2[data-percent="75%"]:before {
+    animation: 1s fillin75 ease forwards;
+  }
+  .circle3[data-percent="75%"]:before {
+    animation: 1s fillin75 ease forwards;
+  }
+  
+  @keyframes fillin76 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 76%;
+    }
+  }
+  .circle[data-percent="76%"]:before {
+    animation: 1s fillin76 ease forwards;
+  }
+  .circle2[data-percent="76%"]:before {
+    animation: 1s fillin76 ease forwards;
+  }
+  .circle3[data-percent="76%"]:before {
+    animation: 1s fillin76 ease forwards;
+  }
+  
+  @keyframes fillin77 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 77%;
+    }
+  }
+  .circle[data-percent="77%"]:before {
+    animation: 1s fillin77 ease forwards;
+  }
+
+  .circle2[data-percent="77%"]:before {
+    animation: 1s fillin77 ease forwards;
+  }
+  .circle3[data-percent="77%"]:before {
+    animation: 1s fillin77 ease forwards;
+  }
+  
+  @keyframes fillin78 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 78%;
+    }
+  }
+  .circle[data-percent="78%"]:before {
+    animation: 1s fillin78 ease forwards;
+  }
+
+  .circle2[data-percent="78%"]:before {
+    animation: 1s fillin78 ease forwards;
+  }
+  .circle3[data-percent="78%"]:before {
+    animation: 1s fillin78 ease forwards;
+  }
+  
+  @keyframes fillin79 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 79%;
+    }
+  }
+  .circle[data-percent="79%"]:before {
+    animation: 1s fillin79 ease forwards;
+  }
+  .circle2[data-percent="79%"]:before {
+    animation: 1s fillin79 ease forwards;
+  }
+  .circle3[data-percent="79%"]:before {
+    animation: 1s fillin79 ease forwards;
+  }
+  
+  
+  @keyframes fillin80 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 80%;
+    }
+  }
+  .circle[data-percent="80%"]:before {
+    animation: 1s fillin80 ease forwards;
+  }
+
+  .circle2[data-percent="80%"]:before {
+    animation: 1s fillin80 ease forwards;
+  }
+  .circle3[data-percent="80%"]:before {
+    animation: 1s fillin80 ease forwards;
+  }
+  
+  @keyframes fillin81 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 81%;
+    }
+  }
+  .circle[data-percent="81%"]:before {
+    animation: 1s fillin81 ease forwards;
+  }
+  .circle2[data-percent="81%"]:before {
+    animation: 1s fillin81 ease forwards;
+  }
+  .circle3[data-percent="81%"]:before {
+    animation: 1s fillin81 ease forwards;
+  }
+
+  @keyframes fillin82 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 82%;
+    }
+  }
+  .circle[data-percent="82%"]:before {
+    animation: 1s fillin82 ease forwards;
+  }
+  .circle2[data-percent="82%"]:before {
+    animation: 1s fillin82 ease forwards;
+  }
+  .circle3[data-percent="82%"]:before {
+    animation: 1s fillin82 ease forwards;
+  }
+
+  
+  @keyframes fillin83 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 83%;
+    }
+  }
+  .circle[data-percent="83%"]:before {
+    animation: 1s fillin83 ease forwards;
+  }
+
+  .circle2[data-percent="83%"]:before {
+    animation: 1s fillin83 ease forwards;
+  }
+  .circle3[data-percent="83%"]:before {
+    animation: 1s fillin83 ease forwards;
+  }
+  
+  @keyframes fillin84 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 84%;
+    }
+  }
+  .circle[data-percent="84%"]:before {
+    animation: 1s fillin84 ease forwards;
+  }
+
+  .circle2[data-percent="84%"]:before {
+    animation: 1s fillin84 ease forwards;
+  }
+  .circle3[data-percent="84%"]:before {
+    animation: 1s fillin84 ease forwards;
+  }
+  
+  @keyframes fillin85 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 85%;
+    }
+  }
+  .circle[data-percent="85%"]:before {
+    animation: 1s fillin85 ease forwards;
+  }
+  
+  .circle2[data-percent="85%"]:before {
+    animation: 1s fillin85 ease forwards;
+  }
+  .circle3[data-percent="85%"]:before {
+    animation: 1s fillin85 ease forwards;
+  }
+  @keyframes fillin86 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 86%;
+    }
+  }
+  .circle[data-percent="86%"]:before {
+    animation: 1s fillin86 ease forwards;
+  }
+
+  .circle2[data-percent="86%"]:before {
+    animation: 1s fillin86 ease forwards;
+  }
+  .circle3[data-percent="86%"]:before {
+    animation: 1s fillin86 ease forwards;
+  }
+  
+  @keyframes fillin87 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 87%;
+    }
+  }
+  .circle[data-percent="87%"]:before {
+    animation: 1s fillin87 ease forwards;
+  }
+
+  .circle2[data-percent="87%"]:before {
+    animation: 1s fillin87 ease forwards;
+  }
+  .circle3[data-percent="87%"]:before {
+    animation: 1s fillin87 ease forwards;
+  }
+  
+  @keyframes fillin88 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 88%;
+    }
+  }
+  .circle[data-percent="88%"]:before {
+    animation: 1s fillin88 ease forwards;
+  }
+
+  .circle2[data-percent="88%"]:before {
+    animation: 1s fillin88 ease forwards;
+  }
+  .circle3[data-percent="88%"]:before {
+    animation: 1s fillin88 ease forwards;
+  }
+  
+  @keyframes fillin89 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 89%;
+    }
+  }
+  .circle[data-percent="89%"]:before {
+    animation: 1s fillin89 ease forwards;
+  }
+
+  .circle2[data-percent="89%"]:before {
+    animation: 1s fillin89 ease forwards;
+  }
+  .circle3[data-percent="89%"]:before {
+    animation: 1s fillin89 ease forwards;
+  }
+  
+  
+  @keyframes fillin90 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 90%;
+    }
+  }
+  .circle[data-percent="90%"]:before {
+    animation: 1s fillin90 ease forwards;
+  }
+
+  .circle2[data-percent="90%"]:before {
+    animation: 1s fillin90 ease forwards;
+  }
+  .circle3[data-percent="90%"]:before {
+    animation: 1s fillin90 ease forwards;
+  }
+  
+  
+  @keyframes fillin91 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 91%;
+    }
+  }
+  .circle[data-percent="91%"]:before {
+    animation: 1s fillin91 ease forwards;
+  }
+  .circle2[data-percent="91%"]:before {
+    animation: 1s fillin91 ease forwards;
+  }
+  .circle3[data-percent="91%"]:before {
+    animation: 1s fillin91 ease forwards;
+  }
+  
+  
+  @keyframes fillin92 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 92%;
+    }
+  }
+  .circle[data-percent="92%"]:before {
+    animation: 1s fillin92 ease forwards;
+  }
+
+  .circle2[data-percent="92%"]:before {
+    animation: 1s fillin92 ease forwards;
+  }
+  .circle3[data-percent="92%"]:before {
+    animation: 1s fillin92 ease forwards;
+  }
+  
+  
+  @keyframes fillin93 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 93%;
+    }
+  }
+  .circle[data-percent="93%"]:before {
+    animation: 1s fillin93 ease forwards;
+  }
+  .circle2[data-percent="93%"]:before {
+    animation: 1s fillin93 ease forwards;
+  }
+  .circle3[data-percent="93%"]:before {
+    animation: 1s fillin93 ease forwards;
+  }
+  
+  @keyframes fillin94 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 94%;
+    }
+  }
+  .circle[data-percent="94%"]:before {
+    animation: 1s fillin94 ease forwards;
+  }
+
+  .circle2[data-percent="94%"]:before {
+    animation: 1s fillin94 ease forwards;
+  }
+  .circle3[data-percent="94%"]:before {
+    animation: 1s fillin94 ease forwards;
+  }
+  
+  @keyframes fillin95 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 95%;
+    }
+  }
+  .circle[data-percent="95%"]:before {
+    animation: 1s fillin95 ease forwards;
+  }
+  
+  .circle2[data-percent="95%"]:before {
+    animation: 1s fillin95 ease forwards;
+  }
+  .circle3[data-percent="95%"]:before {
+    animation: 1s fillin95 ease forwards;
+  }
+
+  @keyframes fillin96 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 96%;
+    }
+  }
+  .circle[data-percent="96%"]:before {
+    animation: 1s fillin96 ease forwards;
+  }
+
+  .circle2[data-percent="96%"]:before {
+    animation: 1s fillin96 ease forwards;
+  }
+  .circle3[data-percent="96%"]:before {
+    animation: 1s fillin96 ease forwards;
+  }
+  
+  @keyframes fillin97 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 97%;
+    }
+  }
+  .circle[data-percent="97%"]:before {
+    animation: 1s fillin97 ease forwards;
+  }
+
+  .circle2[data-percent="97%"]:before {
+    animation: 1s fillin97 ease forwards;
+  }
+
+  .circle3[data-percent="97%"]:before {
+    animation: 1s fillin97 ease forwards;
+  }
+  
+  @keyframes fillin98 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 98%;
+    }
+  }
+  .circle[data-percent="98%"]:before {
+    animation: 1s fillin98 ease forwards;
+  }
+
+  .circle2[data-percent="98%"]:before {
+    animation: 1s fillin98 ease forwards;
+  }
+
+  .circle3[data-percent="98%"]:before {
+    animation: 1s fillin98 ease forwards;
+  }
+  
+  @keyframes fillin99 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 99%;
+    }
+  }
+  .circle[data-percent="99%"]:before {
+    animation: 1s fillin99 ease forwards;
+  }
+
+  .circle2[data-percent="99%"]:before {
+    animation: 1s fillin99 ease forwards;
+  }
+  .circle3[data-percent="99%"]:before {
+    animation: 1s fillin99 ease forwards;
+  }
+  
+  
+  @keyframes fillin100 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .circle[data-percent="100%"]:before {
+    animation: 1s fillin100 ease forwards;
+  }
+
+  .circle2[data-percent="100%"]:before {
+    animation: 1s fillin100 ease forwards;
+  }
+  .circle3[data-percent="100%"]:before {
+    animation: 1s fillin100 ease forwards;
+  }
+  
+  body {
+    background-color: #ddd;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .wrap {
+    margin: 50px auto 0;
+    width: 600px;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .circle2 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .circle3 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .circle:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 0;
+  }
+
+  .circle2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 0;
+  }
+
+  .circle3:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 0;
+  }
+
+  .circle:after {
+    content: attr(data-percent);
+    position: absolute;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    margin-top: -22px;
+  }
+
+  .circle2:after {
+    content: attr(data-percent);
+    position: absolute;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    margin-top: -22px;
+  }
+
+  .circle3:after {
+    content: attr(data-percent);
+    position: absolute;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    margin-top: -22px;
+  }
+  
+  .circle.gray {
+    border: 3px solid white;
+  }
+  .circle.gray:before {
+    background-color: #c2e8fb;
+  }
+  .circle.gray:after {
+    color: white;
+  }
+  
+  .circle2.blue {
+    border: 3px solid white;
+  }
+  .circle2.blue:before {
+    background-color: #c2e8fb;
+  }
+  .circle2.blue:after {
+    color: white;
+  }
+  
+  .circle3.green {
+    border: 3px solid white;
+  }
+  .circle3.green:before {
+    background-color: #c2e8fb;
+  }
+  .circle3.green:after {
+    color: white;
+  }
+
+  .circle {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: -100px;
+  }
+
+  .circle2 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 150px;
+  }
+
+  .circle3 {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 500px;
+  }
+
+  .seriously {
+    margin-top: -50px;
+  }
+
+  .rewardCOne {
+    font-size: 30px;
+    font-family: Universe;
+    color: white;
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 355px;
+  }
+  .rewardCOnePoints {
+    font-size: 30px;
+    font-family: Universe;
+    color: #c2e8fb;
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 385px;
+  }
+
+  .rewardCTwo {
+    font-size: 30px;
+    font-family: Universe;
+    color: white;
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 640px;
+  }
+  .rewardCTwoPoints {
+    font-size: 30px;
+    font-family: Universe;
+    color: #c2e8fb;
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 700px;
+  }
+  .clickToGet {
+    font-size: 30px;
+    font-family: Universe;
+    color: #af5c60;
+    position: absolute;
+    margin-top: 485px;
+    margin-left: 640px;
+  }
+
+  .rewardCThree {
+    font-size: 30px;
+    font-family: Universe;
+    color: white;
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 935px;
+  }
+  .rewardCThreePoints {
+    font-size: 30px;
+    font-family: Universe;
+    color: #c2e8fb;
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 985px;
+  }
+
+  .rewardArrowL {
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 230px;
+  }
+
+  .rewardArrowR {
+    position: absolute;
+    margin-left: 1160px;
+    margin-top: 230px;
+  }

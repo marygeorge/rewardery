@@ -1,0 +1,267 @@
+/*/////Parent page new////////////////////////////////////////////////////////////*/
+html{
+  font-family: Helvetica, sans-serif;
+}
+body{
+  background-color: #ffffff;
+}
+
+.row{
+  align-content: center;
+  text-align: center;
+}
+.navBar {
+    width: 100%;
+    height: 85px;
+    padding-top: 0%;
+    background: linear-gradient(to left top, #ffffff,#ffffff, #d9d9d9,#403f45);
+}
+
+.logo {
+    width:100%;
+    background-color: transparent;
+}
+.logoimg{
+  background-color: transparent;
+  width:130%;
+}
+.parentNav {
+    font-size: 5em;
+    text-shadow: 2px 2px 1px #403f45;
+    font-family: Universe;
+    color: #fedc00;
+    margin:0px;
+    padding:0px;
+    
+}
+.childname{
+  width: 90%;
+  font-size: 4em;
+  font-family: Universe;
+  color: #fedc00;
+  margin:0px;
+  padding:0px;
+}
+.addkids{
+    font-size: 1.5em;
+    margin-top:6%;
+    width:50%;
+    background-color: #403f45;
+    color:#fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.logOut {
+    font-size: 18px;
+    font-weight: normal;
+    color: #403f45;
+    text-decoration: none;
+    font-family: Universe;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.calendarParent {
+    height: 350px;
+    width:100%;
+    text-align: center;
+    align-content: center;
+}
+.theDate {
+    font-size: 30px;
+    color: #fedc00;
+    position: absolute;
+    font-family: Universe;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.pendingChores{
+    height: 350px;
+    width:100%;
+    font-size: 10px;
+    color: #403f45;
+    background: url(/assets/approved.png) no-repeat right center fixed;
+}
+
+.pageend{
+  background: linear-gradient(to right bottom,#ffffff, #ffffff,#ffffff, #d9d9d9,#403f45);
+    
+}
+
+.container{
+  width:100%;
+}
+
+.kid-dd{
+  margin: 20px 0px 0px 0px;
+}
+
+.kid-dd button{
+  padding: 0px 70px;
+  font-size: 1.7em;
+}
+
+
+
+.calendar{
+    background-color: #403f45;
+    margin: 2px 2px 2px 5px;
+    padding: 20px 10px 10px 10px;
+}
+
+.calendar h2{
+  color:#ffffff;
+}
+
+.calendar div{
+  margin: 0px auto;
+}
+
+
+/*/////Chore styles////////////////////////////////////////////////////////////*/
+
+
+.chore-list{
+  padding: 50px;
+  font-size: 2em;
+}
+.chore-item{
+  background-color: #fdfdfd;
+  box-shadow: 2px 2px 10px #777777;
+  font-size: 1em;
+}
+#choreType{
+    margin: 0px auto 20px auto;
+    width: 90%;
+    background-color: #000000;
+    color: #aaaaaa;
+    font-size: 1.5em;
+}
+.kid-chores{
+  background-color: transparent;
+  padding: 50px;
+  font-size: 2em;
+  min-height: 400px;
+}
+.chore-form{
+  background-color: transparent;
+  padding: 30px 10px;
+ margin-top: 15px;
+ align-self: center;
+}
+.chores {
+    font-size: 30px;
+    font-family: Universe;
+    color: #403f45;
+    position: absolute;
+}
+
+
+/*/////Reward styles////////////////////////////////////////////////////////////*/
+
+.rewardsParent {
+    height: 470px;
+}
+.reward-form{
+  background: url(/assets/addReward.png) repeat left top fixed;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:transparent;*/
+  width: 95%;
+  /*padding: 30px 10px;*/
+  margin-left: 2%;
+  border-style: ridge;
+  border-width: 5px;
+}
+.reward-list{
+  padding: 50px;
+  font-size: 2em;
+  /*background-color: #c2e8fb;*/
+}
+.reward-item{
+  background-color: #403f45;
+  color: #fedc00;
+  box-shadow: 2px 2px 10px #777777;
+  font-size: 1.5em;
+}
+.dReward{
+    background-color: transparent;
+    border-color: transparent;
+    width: auto;
+    margin:0px;
+    padding:0px;
+}
+.rewardpointslabel{
+  color: #fedc00;
+  background: transparent;
+  
+}
+
+
+.link-btn a{
+  font-weight: bolder;
+  color:#000000;
+}
+
+
+@media only screen and (max-width: 1170px) {
+  .navBar {
+    width: 100%;
+    height:200px;
+    padding-top: 0%;
+    background: linear-gradient(to left top, #ffffff,#ffffff, #d9d9d9,#403f45);
+  }
+  .logoimg{
+    width:65%;
+  }
+  .parentNav {
+      font-size: 4em;
+  }
+  .childname{
+  width: 100%;
+  font-size: 3em;
+ 
+} 
+  .reward-item{
+    font-size: 1.5em;
+  }  
+  .reward-form{
+    margin-left: 3%;
+    width: 90%;
+    border-style: ridge;
+    border-width: 5px;
+  }
+  .chore-item{
+    background-color: #fdfdfd;
+    box-shadow: 2px 2px 10px #777777;
+    font-size: .5em;
+  }
+ 
+}
+
+@media only screen and (max-width: 361px) {
+  .logoimg{
+    width:45%;
+  }
+  .parentNav {
+      font-size: 3em;
+  }
+  .reward-item{
+    font-size: 1em;
+  } 
+  .reward-form{
+    margin-left: 4%;
+    width: 90%;
+    border-style: ridge;
+    border-width: 5px;
+  }
+  .chore-item{
+    background-color: #fdfdfd;
+    box-shadow: 2px 2px 10px #777777;
+    font-size: .5em;
+  }
+}
