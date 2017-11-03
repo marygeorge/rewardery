@@ -3,7 +3,7 @@ import React from "react";
 export const Signin = props =>
              <div className="signin-panel">
                     <h2 className="logInForm">Log In</h2>
-                    <input onChange={props.handleChange} className="form-control" id="userName" type="name" placeholder="Email" />
+                    <input onChange={props.handleChange} className="form-control" id="userName" type="name" placeholder="Parent Email/ Child username" />
                     <input onChange={props.handleChange}  className="form-control" id="password" type="password" placeholder="Password" />
                     <div className="radioOne">
                         <input onClick={props.handleChange}  id="whoParent" type="radio" name="field" value="option" />

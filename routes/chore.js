@@ -18,7 +18,7 @@ router.route("/api/isValidEmail/:email").get((req,res)=>{
 });
 
 router.route("/api/login/:email/:password/:type").get((req,res)=>{ 
-  console.log("\n username :"+req.params.username+"\n password :"+req.params.password+"\n type :"+req.params.type)
+  console.log("\n username :"+req.params.email+"\n password :"+req.params.password+"\n type :"+req.params.type)
   if(req.params.type==="parent")
   {
    db.Parent.findOne({
@@ -37,7 +37,7 @@ router.route("/api/login/:email/:password/:type").get((req,res)=>{
   {
    db.Child.findOne({
             where:{
-                ChildUsername:req.params.username,
+                ChildUsername:req.params.email,
                 ChildPassword: req.params.password
             }
         }).then(function(result) {
